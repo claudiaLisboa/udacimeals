@@ -1,1 +1,3 @@
-meal-planner
+Meal-planner food calendar application
+
+
