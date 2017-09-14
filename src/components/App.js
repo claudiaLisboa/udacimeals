@@ -4,6 +4,9 @@ import { addRecipe, removeFromCalendar } from '../actions'
 
 
 class App extends Component {
+  doThing = () => {
+    this.props.dispatch(addRecipe ({ }))
+  }
   render() {
     console.log('Props', this.props)
     return (
@@ -38,7 +41,4 @@ class App extends Component {
   }
   
   
-  export default connect( 
-    mapStateToProps,
-    mapDispatchToProps
-  )(App)
+  export default connect( mapStateToProps,mapDispatchToProps)(App)
